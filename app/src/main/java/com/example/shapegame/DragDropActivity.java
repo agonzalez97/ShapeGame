@@ -14,9 +14,9 @@ public class DragDropActivity extends AppCompatActivity {
         findViewById(R.id.myimage2).setOnTouchListener(new MyTouchListener());
         findViewById(R.id.myimage3).setOnTouchListener(new MyTouchListener());
         findViewById(R.id.myimage4).setOnTouchListener(new MyTouchListener());
-        findViewById(R.id.topleft).setOnDragListener(new MyDragListener(this));
-        findViewById(R.id.topright).setOnDragListener(new MyDragListener(this));
-        findViewById(R.id.bottomleft).setOnDragListener(new MyDragListener(this));
-        findViewById(R.id.bottomright).setOnDragListener(new MyDragListener(this));
+        findViewById(R.id.circulo).setOnDragListener(new MyDragListener(this));
+        findViewById(R.id.rombo).setOnDragListener(new MyDragListener(this));
+        findViewById(R.id.trapezi).setOnDragListener(new MyDragListener(this));
+        findViewById(R.id.triangle).setOnDragListener(new MyDragListener(this));
     }
 }
