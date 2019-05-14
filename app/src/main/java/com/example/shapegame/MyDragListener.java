@@ -11,9 +11,32 @@ public class MyDragListener implements View.OnDragListener {
     private Drawable enterShape;
     private Drawable normalShape;
 
-    MyDragListener(Context context) {
-        enterShape = context.getResources().getDrawable(R.drawable.shape_droptarget);
-        normalShape = context.getResources().getDrawable(R.drawable.shape);
+    MyDragListener(Context context,String figuras) {
+
+        switch (figuras){
+
+            case "triangulo":
+                enterShape = context.getResources().getDrawable(R.drawable.triangulo1);
+                normalShape = context.getResources().getDrawable(R.drawable.triangulo1);
+                break;
+
+
+            case "rombo":
+                enterShape = context.getResources().getDrawable(R.drawable.rombo2);
+                normalShape = context.getResources().getDrawable(R.drawable.rombo2);
+                break;
+
+
+            case "trapezi":
+                enterShape = context.getResources().getDrawable(R.drawable.pentagon);
+                normalShape = context.getResources().getDrawable(R.drawable.pentagon);
+                break;
+
+            case "circulo":
+                enterShape = context.getResources().getDrawable(R.drawable.circulo1);
+                normalShape = context.getResources().getDrawable(R.drawable.circulo1);
+                break;
+        }
     }
 
     @Override
@@ -25,21 +48,19 @@ public class MyDragListener implements View.OnDragListener {
             case DragEvent.ACTION_DRAG_ENTERED:
                 v.setBackgroundDrawable(enterShape);
                 break;
+
             case DragEvent.ACTION_DRAG_EXITED:
-                v.setBackgroundDrawable(normalShape);
                 break;
             case DragEvent.ACTION_DROP:
-                // Dropped, reassign View to ViewGroup
                 View view = (View) event.getLocalState();
                 ViewGroup owner = (ViewGroup) view.getParent();
                 owner.removeView(view);
-                LinearLayout container = (LinearLayout) v;
-                container.addView(view);
+                //LinearLayout container = (LinearLayout) v;
+               // container.addView(view);
                 view.setVisibility(View.VISIBLE);
                 break;
             case DragEvent.ACTION_DRAG_ENDED:
-                v.setBackgroundDrawable(normalShape);
-            default:
+                default:
                 break;
         }
         return true;

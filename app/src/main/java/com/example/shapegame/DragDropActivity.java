@@ -10,13 +10,13 @@ public class DragDropActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drag_drop);
 
-        findViewById(R.id.myimage1).setOnTouchListener(new MyTouchListener());
-        findViewById(R.id.myimage2).setOnTouchListener(new MyTouchListener());
-        findViewById(R.id.myimage3).setOnTouchListener(new MyTouchListener());
-        findViewById(R.id.myimage4).setOnTouchListener(new MyTouchListener());
-        findViewById(R.id.circulo).setOnDragListener(new MyDragListener(this));
-        findViewById(R.id.rombo).setOnDragListener(new MyDragListener(this));
-        findViewById(R.id.trapezi).setOnDragListener(new MyDragListener(this));
-        findViewById(R.id.triangle).setOnDragListener(new MyDragListener(this));
+        findViewById(R.id.triangulo2).setOnTouchListener(new MyTouchListener());
+        findViewById(R.id.rombo2).setOnTouchListener(new MyTouchListener());
+        findViewById(R.id.trapezi2).setOnTouchListener(new MyTouchListener());
+        findViewById(R.id.circulo2).setOnTouchListener(new MyTouchListener());
+        findViewById(R.id.circulo).setOnDragListener(new MyDragListener(this,"circulo"));
+        findViewById(R.id.rombo).setOnDragListener(new MyDragListener(this,"rombo"));
+        findViewById(R.id.trapezi).setOnDragListener(new MyDragListener(this,"trapezi"));
+        findViewById(R.id.triangle).setOnDragListener(new MyDragListener(this,"triangle"));
     }
 }
