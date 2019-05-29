@@ -36,6 +36,16 @@ public class MyDragListener implements View.OnDragListener {
                 enterShape = context.getResources().getDrawable(R.drawable.circulo1);
                 normalShape = context.getResources().getDrawable(R.drawable.circulo1);
                 break;
+
+            case "cuadrado":
+                enterShape = context.getResources().getDrawable(R.drawable.cuadrado);
+                normalShape = context.getResources().getDrawable(R.drawable.cuadrado);
+                break;
+
+            case "rectangulo":
+                enterShape = context.getResources().getDrawable(R.drawable.rectan);
+                normalShape = context.getResources().getDrawable(R.drawable.rectan);
+                break;
         }
     }
 
