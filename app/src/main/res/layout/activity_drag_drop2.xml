@@ -104,7 +104,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="32dp"
-        android:src="@drawable/cuadrado"
+        android:background="@drawable/cuadrado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/trapezi2"
         app:layout_constraintStart_toEndOf="@+id/rombo2" />

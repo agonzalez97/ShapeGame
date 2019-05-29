@@ -56,7 +56,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:src="@drawable/rombo2"
+        android:background="@drawable/rombo2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/circulo2"
         app:layout_constraintStart_toEndOf="@+id/trapezi2" />
@@ -79,7 +79,7 @@
         android:layout_marginStart="140dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="32dp"
-        android:src="@drawable/pentagon"
+        android:background="@drawable/pentagon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/rombo2"
         app:layout_constraintStart_toStartOf="parent" />
@@ -105,7 +105,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:src="@drawable/circulo1"
+        android:background="@drawable/circulo1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/triangulo2"
         app:layout_constraintStart_toEndOf="@+id/rombo2" />
